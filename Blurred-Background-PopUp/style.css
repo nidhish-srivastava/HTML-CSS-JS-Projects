@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.heading {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: 0.3s;
+    height: 100vh;
+    background: url("3.jpg");
+    background-size: cover;
+}
+
+
+h1 {
+    word-spacing: 5px;
+    color: white;
+    font-weight: 800;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 18px;
+    border: none;
+    transition: .3s;
+    box-shadow: 0 0 10px rgba(123, 217, 137, 0.914);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: salmon;
+    box-shadow: 0 0 20px rgba(123, 217, 137, 0.914);
+}
+
+.heading.active {              
+    filter: blur(5px) brightness(0.6);
+}
+
+.popup-container {
+    left: 50%;
+    transform: translateX(-50%);   /* Ensuring that it is center */
+    top: 30%;
+    position: fixed;
+    
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    padding: 30px;
+    background: url("2.jpg");
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    transition: all 0.7s;
+}
+
+.close-icon {
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    cursor: pointer;
+}
+
+.popup-btn {
+    padding: 4px;
+    font-size: 18px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: salmon;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.input {
+    padding: 8px;
+    margin-top: 4px;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: black;
+    border-radius: 10px;
+}
+
+.popup-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup-btn:active {
+    opacity: 0.9;
+}
+
+.popup-container.active {
+    /* This class makes the popup contain hidden,so when we click on button,we want this class to get removed so that we can see the pop container*/
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}
