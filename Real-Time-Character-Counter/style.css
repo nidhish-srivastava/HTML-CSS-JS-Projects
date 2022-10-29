@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: salmon;
+    overflow-y: hidden;
+    font-family: 'Raleway' , sans-serif;
+}
+
+.container {
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+h2{
+    margin-left: 10px;
+
+}
+.textarea {
+    margin-top: 10px;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+    height: 200px;
+    font-size: 20px;
+    border: 2px solid darkgray;
+}
+
+.counting-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.counting-container p {
+    font-size: 15px;
+}
+
+.total-counting {
+    color: blue;
+}
+
+.remaining-counting {
+    color: red;
+}
